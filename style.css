@@ -1,0 +1,532 @@
+/*custom font*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/*basic reset*/
+* {
+margin: 0;
+padding: 0;
+}
+body {
+    height: auto;
+    background: #E5E5E5;
+    font-family: Poppins, arial
+}
+.formContainer{
+    background-color: #FFF;
+    padding: 120px 40px;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+    margin: 120px auto;
+    border-radius: 30px;
+}
+/*form styles*/
+#msform {
+    /* width: 80%; */
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+#msform fieldset {
+    background: transparent;
+    border: 0 none;
+    border-radius: 3px;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    position: absolute;
+}
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+    display: none;
+}
+/*inputs*/
+
+.dropdown,
+.dropdown-city { 
+    -webkit-appearance: none;
+    padding: 0 12px;
+    background-image: url('./images//arrow.png');
+    background-repeat: no-repeat;
+    background-position: 95% center;
+  }
+#msform input, 
+.dropdown-city,
+.phoneNumber {
+    border: none;
+    padding-left: 8px;
+    height: 46px;
+    margin-bottom: 65px;
+    width: 100% !important;
+    color: #727272 !important;
+    background-color: #FFF !important;
+    border: 1px solid #379EA5;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+    font-size: 15px;
+    line-height: 22px;
+    outline: 0em !important;
+}
+#msform input:focus, 
+.dropdown-city:focus,
+.phoneNumber:focus{
+    border: 1px solid #379EA5 !important;
+}
+
+.phoneNumber .dropdown{
+    width: 90px;
+    padding:0 !important;
+    margin-right: 0 !important;
+    display: inline-block;
+    left: -15px !important
+}
+.dropdown-toggle::after{
+    display: none !important;
+}
+#msform .phoneNumber input{
+    border: none !important;
+    width: calc(100% - 95px) !important;
+    display: inline-block;
+    background: transparent !important;
+    border-left: 1px solid #379EA5 !important;
+}
+#msform .next-first{
+    background: #FF7842 !important;
+    color: #FFF !important;
+    width: 100% !important;
+    text-align: center !important;
+    margin-top: 80px !important;
+    margin-bottom: 40px !important;
+    font-weight: bold !important;
+}
+fieldset h6{
+    font-size: 13px;
+}
+.bag-coffe h4{
+    color: #434343;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 4px;
+}
+.bag-coffe p{
+    color: #717171;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 22px;
+    font-size: 15px;
+}
+.bag-coffe h6{
+    color:#717171;
+    font-size: 12px;
+    width: 90%;
+    margin: 15px auto auto;
+}
+.bag-coffe .contentUnderimg{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height */
+    text-align: center;
+    color: #717171;
+    margin: 5px auto 64px
+}
+.bag-coffe div{
+    margin: -15px auto auto
+}
+.bag-coffe div small{
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 13px;
+    /* identical to box height */
+    text-align: center;
+    color: #717171;
+}
+.bag-coffe div h6{
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 19px;
+    text-align: center;
+    color: #379EA5;
+    margin-top: 0;
+}
+fieldset small{
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 15px;
+    color: #000000;
+    text-align: left;
+    display: block;
+}
+.bag-coffe {
+    margin: auto 20px 5px auto;
+    cursor: pointer;
+    padding-top: 35px !important;
+    padding-bottom: 22px !important;
+    min-width: 171px;
+    width: 171px;
+    min-height: 206px;
+}
+.bag-coffe img{
+    margin: auto !important;
+}
+fieldset .active{
+    border: 3px solid #FF7842;
+    padding: 10px;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+    border-radius: 4px;
+}
+.thankyou{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    /* identical to box height */
+    color: #1D2E5B;
+    margin-top: 29px;
+}
+.thnkyoucontent{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #1D2E5B;
+    width: 80%;
+    margin: auto;
+}
+fieldset table {
+    width: 80% !important;
+    margin: 45px auto;
+}
+table{
+    margin-top: 30px;
+}
+table tr th{
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 15px;
+    /* identical to box height */
+    color: #59677C;
+}
+table tr td{
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 15px;
+    color: #59677C !important;
+    text-align: right;
+}
+.table td, .table th{
+    border-top: none !important
+}
+table tr:last-child{
+    color: #59677C;
+    border-top: 1px solid #dee2e6 !important;
+}
+table tr:nth-of-type(4) th,
+table tr:nth-of-type(4) td{
+    color: #FF7842
+}
+table tr:last-child th,
+table tr:last-child td{
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 16px;
+    color: #1D2E5B;
+}
+/*buttons*/
+#msform .action-button {
+    border:  none;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    font-size: 18px;
+}
+#msform .next:hover, #msform .next:focus {
+    background: #FFF !important;
+    color: #FF7842 !important;
+    border: 2px solid #FF7842 !important
+}
+#msform .submit:hover, #msform .submit:focus{
+    background: #FFF !important;
+    color: #379EA5 !important;
+     border: 2px solid #379EA5;
+}
+#msform .action-prev{
+    display: block;
+    width: 50%;
+    cursor: pointer;
+    font-size: 12px;
+}
+#msform fieldset:last-of-type img{
+    width : 190px;
+    height : 190px
+}
+/*headings*/
+.fs-title {
+    font-size: 28px;
+    color: #3D3D3D;
+    margin-bottom: 10px;
+    font-weight: 600;
+    line-height: 42px;
+    text-align: left;
+}
+.fs-subtitle {
+    font-weight: 400;
+    font-size: 15px;
+    color: #4E4D4D;
+    line-height: 24.6px;
+}
+fieldset h5{
+    color: #1A1A1A;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: left;
+}
+#msform .submit{
+    background: #379EA5 !important;
+    width: 100% !important;
+    text-align: center !important;
+    border-right: 4px !important;
+    color: #FFF !important
+}
+/*progressbar*/
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    counter-reset: step;
+}
+#progressbar li {
+    list-style-type: none;
+    color: #000;
+    text-transform: capitalize;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 78px;
+}
+#progressbar .imgContainer{
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    opacity: 0;
+    background-color: #FFF !important;
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+    border: 2px solid #379EA5;
+}
+#progressbar .imgContainer img{
+    display: inline-block;
+    margin: 15px auto;;
+}
+#progressbar li h5{
+    margin: -50px auto auto;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    /* identical to box height */
+    text-align: right;
+    color: #000000;
+    margin-bottom: 4px;
+    max-width: 164px;
+}
+#progressbar li:first-of-type h5{
+    margin: -50px auto auto;
+}
+#progressbar li p{
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 19px;
+    text-align: right;
+    color: #000000;
+    max-width: 164px;
+    margin: auto 
+}
+#progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 53px;
+    height: 53px;
+    display: inline-block;
+    color: #FFF;
+    background: #FF7842;
+    border-radius: 50%;
+    margin: 0 0 5px auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 50px
+}
+/*progressbar connectors*/
+#progressbar li:after {
+    content: '';
+    width: 1.5px;
+    height: 100%;
+    background: #379EA5;
+    position: absolute;
+    right: 25px;
+    top: 53px;
+    /* z-index: 1;  */
+}
+/*make border Color */
+#progressbar li.active + li:before,
+#progressbar li:first-of-type:before {
+    border: 2px solid #379EA5;
+}
+#progressbar li.active .imgContainer{
+    opacity: 1;
+}
+#progressbar li span{
+    position: absolute;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: #379ea5;
+    z-index: 999;
+    top: calc(50% + 20px);
+    right: 20px;
+    border-radius: 50%;
+}
+#progressbar .line{
+    height: 5%;
+    border-right: 2px solid #379ea5;
+    margin-right: 25px;
+}
+.dropdown-city{
+    color: #AAA !important;
+}
+.mobile{
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
+    display: none;
+    margin-bottom: 20px;
+}
+@media (max-width : 1200px){
+    #progressbar li h5,
+    #progressbar li p{
+        margin-right: 60px !important;
+    }
+    fieldset table,
+    .thnkyoucontent{
+        width: 100% !important;
+    }
+    #msform input, .dropdown-city, .phoneNumber{
+        width: 100% !important;
+        margin-bottom: 30px !important;
+    }
+    .formContainer{
+        margin: 40px auto !important;
+        padding: 40px 20px !important;
+    }
+}
+@media (max-width: 770px){
+    #progressbar li h5,
+    #progressbar li p{
+        display: none !important;
+    }
+    .formContainer{
+        margin: 10px 0 !important;
+        padding: 10px 0 !important;
+    }
+    #msform fieldset{
+        padding : 20px 20px 0 !important
+    }
+    fieldset h5{
+        font-size: 17px !important;
+        margin-bottom: 0 !important;
+        text-align: center !important;
+        margin-top: 0 !important;
+    }
+    .mobile{
+        display: block;
+    }
+    fieldset:first-of-type .fs-title,
+    fieldset:first-of-type .fs-subtitle{
+        display: none;
+    }
+    #msform input, .dropdown-city, .phoneNumber{
+        margin-bottom: 20px !important;
+    }
+    #msform .next-first{
+        margin-top: 20px !important;
+        font-size: 15px !important;
+        border-radius: 0 !important;
+        margin-bottom: 15px !important;
+        padding: 10px  !important;
+        height: 42px !important;
+    }
+    .fs-title{
+        font-weight: 500 !important;
+        font-size: 17px !important;
+        line-height: 25px !important;
+        text-align: center !important;
+    }
+    fieldset:nth-of-type(2) h5,
+    fieldset:nth-of-type(2) p,
+    fieldset:nth-of-type(3) h5,
+    fieldset:nth-of-type(3) p,
+    fieldset:nth-of-type(4) h5,
+    fieldset:nth-of-type(4) p{
+        display: none !important;
+    }
+    #progressbar .imgContainer,
+    #progressbar li::before{
+        width: 34px !important;
+        height: 34px !important;
+        font-size: 17px !important;
+        line-height: 34px !important;
+    }
+    #progressbar .imgContainer img{
+        width: 15px !important;
+        height: 15px !important;
+        margin: 10px 8px !important;
+    }
+    #progressbar li::after{
+        right: 18px !important;
+        top: 34px !important;
+    }
+    #progressbar li span{
+        top: calc(50% + 10px) !important;
+        right: 13.2px !important;
+    }
+    #progressbar .line{
+        margin-right: 17px !important;
+    }
+    .bag-coffe{
+        height: 100px !important;
+        min-height: 160px !important;
+        width: 190px !important;
+        min-width: 190px !important;
+        margin: auto !important;
+        padding-top: 20px !important;
+    }
+    .bag-coffe h4{
+        margin-bottom: 25px !important;
+    }
+    .thankyou{
+        font-size: 32px !important;
+        margin-bottom: 8px !important;
+        margin-top: 0 !important;
+    }
+    fieldset table{
+        margin: 20px auto !important
+    }
+    .thnkyoucontent{
+        font-size: 12px !important;
+    }
+    #msform fieldset:last-of-type img{
+        width: 123px !important;
+        height: 123px !important;
+    }
+    #progressbar li{
+        padding-bottom: 90px !important;
+    }
+    .bag-coffe h6{
+        width: 100% !important;
+    }
+    .notePrice{
+        text-align: center !important;
+    }
+}
